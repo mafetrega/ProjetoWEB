@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #130113;
+    /* font-family: "Noto Sans SC", sans-serif;*/
+    font-family: "Quicksand", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff2e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #130113;
+    border-radius: 20px;
+    border: 3px solid #ffffff2e;
+}
+
+
+header div.container {
+    width: 100%;
+    max-width: none;
+}
+
+header div.row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio div {
+    height: 90vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin: 1%;
+}
+
+.title-resenhas {
+    margin-top: 5%;
+}
+
+.tipo-faixa1,
+.tipo-faixa2 {
+    padding: 0% 2% 2% 2%;
+}
+
+.tipo-faixa1 {
+    background-color: #000000;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(0.3);
+    position: absolute;
+}
+
+.swiper-slide .info-carousel {
+    position: relative;
+    color: #fff;
+    margin: 15%;
+    text-align: center;
+    height: 100%;
+}
+
+.swiper-slide .info-carousel a {
+    color: #ffffffdb;
+}
+
+.swiper-slide .info-carousel a:hover {
+    color: #ffa7ff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #130113;
+}
+
+.swiper-pagination-bullet-active {
+    background: #130113;
+}
+
+.swiper-slide .info-carousel .btn-carousel {
+    background-color: #130113;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin-top: 10%;
+}
+
+.swiper-slide .info-carousel .btn-carousel:hover {
+    background-color: #ffa7ff;
+    color: #130113;
+    transition: all 0.5s;
+}
+
+/* Nav */
+
+nav .brand-logo {
+    width: 3%;
+    height: 100%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+
+}
+
+.brand-logo img {
+    width: 100%;
+}
+
+nav {
+    background-color: #13011300;
+    box-shadow: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+.test {
+    background-color: #130113;
+}
+
+.side-nav {
+    background-color: #200220;
+}
+
+.side-nav li a {
+    color: #fff;
+}
+
+.side-nav li a i.material-icons {
+    color: #ffffff;
+}
+
+/* Cards */
+
+.card {
+    background-color: transparent;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.cards-resenha {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+.cards-resenha h4 {
+    color: #fff;
+}
+
+.img-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-card:hover {
+    transform: scale(1.01);
+    transition: all 0.8s;
+}
+
+.card-cartaz {
+    width: 23%;
+    margin: 1%;
+}
+
+.card-cartaz img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-titulo {
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    position: absolute;
+    background-color: #00000044;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 4px 7px 20px 20px #00000044;
+}
+
+.card-number {
+    position: absolute;
+    background: #130113;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 100%;
+    bottom: 1%;
+    right: 1%;
+}
+
+.card_texto {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.foto_resenha {
+    width: 220px;
+    height: 330px;
+}
+
+.botao {
+    border: #200220;
+    background-color: #200220;
+    padding: 10px;
+    color: #fff;
+}
+
+.card.horizontal .card-image img {
+    border-radius: 10px 0 0 10px;
+    height: 50vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.li-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 1% 0% 1% 0%;
+}
+
+.card.horizontal {
+    border-radius: 10px;
+}
+
+.titulo-card {
+    margin: 0;
+    padding: 0;
+}
+
+.card .card-content {
+    padding: 15px;
+}
+
+/* RESENHA */
+
+.infos {
+    display: flex;
+}
+
+.parallax-container {
+    height: 90vh;
+}
+
+.parallax {
+    height: 100%;
+}
+
+.parallax img {
+    filter: brightness(0.8);
+    width: 100vh;
+}
+
+.titulo-resenha {
+    position: absolute;
+    width: 80%;
+    color: white;
+    left: 10%;
+    bottom: 10px;
+}
+
+.corpo-resenha {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.ficha {
+    font-size: 16px;
+    padding-left: 0;
+    width: 50%;
+}
+
+.ficha ul {
+    padding-left: 5%;
+    margin: 0;
+}
+
+.ficha h2 {
+    margin: 5%;
+}
+
+.trailer {
+    height: 60vh;
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 80%;
+}
+
+/* Estrelas */
+
+.star-rating {
+    font-size: 30px;
+}
+
+.star-rating span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.star-rating span::before {
+    content: "\2605";
+    position: absolute;
+}
+
+.star-rating span.filled::before {
+    color: gold;
+}
+
+.li-card.avaliacao {
+    display: flex;
+    align-items: center;
+}
+
+.texto-resenha {
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+.card-elenco {
+    display: flex;
+    align-items: flex-end;
+    background-color: transparent;
+    height: 55vh;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.card-elenco img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card-elenco span {
+    position: absolute;
+    margin: 1%;
+    font-size: 20px;
+    background-color: #0000004d;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px 20px #0000004d;
+}
+
+.card-resenha a {
+    color: #fff;
+}
+
+.card-resenha {
+    position: relative;
+    margin: 5% 0;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+
+.conteudo-card {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 20px;
+}
+
+.card-resenha img {
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+
+}
+
+.card-resenha img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.5);
+}
+
+/* Footer */
+
+.footer {
+    background-color: #200220;
+}
+
+/* Estilos para mobile */
+@media (max-width: 767px) {
+    .card-cartaz {
+        flex: 1 0 100%;
+    }
+
+    .row .col.m6 {
+        margin: 1% 0;
+    }
+
+    .card {
+        background-color: transparent;
+        height: 60vh;
+        border-radius: 10px;
+    }
+
+    .img-card {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .card-number {
+        font-size: 20px;
+        padding: 12px 18px;
+        border-radius: 100%;
+    }
+
+    .card.horizontal .card-image img {
+        border-radius: 10px 0 0 10px;
+        height: 30vh;
+    }
+
+    .infos {
+        display: block;
+    }
+
+    .trailer {
+        width: 100%;
+        height: 35vh;
+    }
+
+    iframe {
+        width: 100%;
+        height: 68%;
+    }
+
+    .ficha {
+        font-size: 16px;
+        padding-left: 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .ficha ul {
+        padding-left: 0;
+    }
+
+    .ficha h2 {
+        margin: 5% 0;
+    }
+
+    .texto-resenha {
+        text-align: justify;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .swiper-slide .info-carousel {
+        margin: 35% 15%;
+    }
+
+    .swiper-slide .info-carousel .btn-carousel {
+        padding: 4% 6%;
+    }
+
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .card-cartaz {
+        flex: 1 0 100%;
+    }
+
+    .row .col.m6 {
+        margin: 1% 0;
+    }
+
+    .infos {
+        display: block;
+    }
+
+    .trailer {
+        width: 100vh;
+        height: 70vh;
+    }
+
+    iframe {
+        width: 100%;
+        height: 80%;
+    }
+
+    .ficha {
+        font-size: 16px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .ficha ul {
+        padding-left: 0;
+    }
+
+    .ficha h2 {
+        margin: 5% 0;
+    }
+
+    .texto-resenha {
+        text-align: justify;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+    .card {
+        background-color: transparent;
+        height: 40vh;
+        border-radius: 10px;
+    }
+
+    .img-card {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
+
+
+
+/* Estilos para desktops */
+@media (min-width: 1201px) {}

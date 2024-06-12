@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_login.css">
+
+    <title>Blog de Filmes</title>
+</head>
+
+<body>
+
+
+
+    <form class="form" id="login">
+        <a class="voltar" href="index.html"><i class="material-icons">arrow_back</i> Voltar</a>
+        <p id="msg"></p>
+
+        <div class="flex-column">
+            <label>Email </label>
+        </div>
+        <div class="inputForm">
+            <span class="material-icons">alternate_email</span>
+            <input type="email" id="email" class="input" placeholder="Enter your Email">
+        </div>
+
+        <div class="flex-column">
+            <label>Password </label>
+        </div>
+        <div class="inputForm">
+            <span class="material-icons">lock</span>
+            <input type="password" id="senha" class="input" placeholder="Enter your Password">
+            <span class="material-icons" id="lnr-eye"></span>
+        </div>
+
+        <div class="flex-row">
+            <a href="senha.html" class="link-login"><span class="span">Enqueceu a senha?</span></a>
+        </div>
+
+        <button type="submit" class="button-submit">Entrar</button>
+
+        <p class="p">Ainda não tem cadastro? <a href="cadastro.html" class="link-login"><span class="span">Cadastre-se
+                    aqui</span></a></p>
+    </form>
+
+
+    <!-- Jquery e JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+
+        let btn = document.querySelector('#lnr-eye');
+        btn.innerHTML = `visibility_off`;
+        btn.style.cursor = 'pointer';
+
+        btn.addEventListener('click', function () {
+
+            let input = document.querySelector('#senha');
+
+            if (input.getAttribute('type') == 'password') {
+                input.setAttribute('type', 'text');
+                btn.innerHTML = `visibility`;
+            } else {
+                input.setAttribute('type', 'password');
+                btn.innerHTML = `visibility_off`;
+            }
+
+        });
+    </script>
+
+    <script>
+
+        document.getElementById("login").addEventListener("submit", () => {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            const resultado = document.getElementById("msg");
+
+            console.log(email);
+            console.log(senha);
+
+            if (email == "" || senha == "") {
+                resultado.innerHTML = `Preencha os campos corretamente!`;
+            }
+
+        });
+
+
+    </script>
+</body>
+
+</html>
