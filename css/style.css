@@ -506,6 +506,13 @@ iframe {
         padding: 4% 6%;
     }
 
+    .parallax-container {
+        height: 50vh;
+    }
+
+    .titulo-resenha {
+        font-size: 40px;
+    }
 }
 
 /* Estilos para tablets */
@@ -564,6 +571,14 @@ iframe {
         height: 100%;
         object-fit: cover;
         object-position: top;
+    }
+
+    .card-elenco span {
+        font-size: 15px;
+    }
+
+    .parallax-container {
+        height: 70vh;
     }
 
 }
