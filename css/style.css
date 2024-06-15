@@ -419,8 +419,12 @@ iframe {
 
 /* Footer */
 
-.footer {
-    background-color: #200220;
+.page-footer {
+    padding-top: 0;
+}
+
+.footer-copyright{
+    justify-content: center;
 }
 
 /* Estilos para mobile */
