@@ -92,11 +92,11 @@ header div.row div {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #130113;
+    color: #9b8c9b;
 }
 
 .swiper-pagination-bullet-active {
-    background: #130113;
+    background: #9b8c9b;
 }
 
 .swiper-slide .info-carousel .btn-carousel {
@@ -163,7 +163,6 @@ nav {
 .cards-resenha {
     width: 90%;
     margin: 0 auto;
-    margin-top: 6%;
 }
 
 .cards-resenha h4 {
@@ -178,7 +177,7 @@ nav {
     object-position: top;
 }
 
-.img-card:hover {
+.card:hover {
     transform: scale(1.01);
     transition: all 0.8s;
 }
@@ -517,6 +516,10 @@ iframe {
     .titulo-resenha {
         font-size: 40px;
     }
+
+    .title-resenhas {
+        margin-top: 20%;
+    }
 }
 
 /* Estilos para tablets */
@@ -585,6 +588,9 @@ iframe {
         height: 70vh;
     }
 
+    .title-resenhas {
+        margin-top: 10%;
+    }
 }
 
 
