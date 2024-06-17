@@ -422,7 +422,7 @@ iframe {
     padding-top: 0;
 }
 
-.footer-copyright{
+.footer-copyright {
     justify-content: center;
 }
 
@@ -592,8 +592,6 @@ iframe {
         margin-top: 10%;
     }
 }
-
-
 
 /* Estilos para desktops */
 @media (min-width: 1201px) {}

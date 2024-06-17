@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Animações -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!--https://github.com/mafetrega/Projeto.git-->
+    <!-- Link do GitHub: https://github.com/mafetrega/ProjetoWEB.git-->
+
     <!--Materialize-->
-    <!-- CSS -->
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style_button.css">
 
@@ -32,8 +35,8 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="resenhas_criticas.html">Resenhas e
                             Críticas</a></li>
-                    
-                    
+
+
                     <li><a href="login.html"><i class="material-icons right">person</i></a></li>
                 </ul>
 
@@ -42,14 +45,14 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="resenhas_criticas.html">Resenhas e
                             Críticas</a></li>
-                    
-                    
+
+
                 </ul>
             </div>
         </nav>
-        <!-- Swiper -->
+        <!-- Swiper (Carousel) -->
         <div class="swiper mySwiper">
-            
+
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="imagens/b99/b991.jpg" alt="">
@@ -131,8 +134,8 @@
                 <div class="col s12 m3 l3 xl3">
                     <div class="card">
                         <div class="card-titulo">Stranger Things</div>
-                        <a href="resenha_stranger.html"> <img class="img-card" src="imagens/stranger_things/stranger_things.jpg"
-                                alt="Image 2"></a>
+                        <a href="resenha_stranger.html"> <img class="img-card"
+                                src="imagens/stranger_things/stranger_things.jpg" alt="Image 2"></a>
                     </div>
                 </div>
 
@@ -147,8 +150,8 @@
                 <div class="col s12 m3 l3 xl3">
                     <div class="card">
                         <div class="card-titulo">Vingadores Ultimato</div>
-                        <a href="resenha_vingadores.html"> <img class="img-card" src="imagens/vingadores/vingadores_ultimato.jpg"
-                                alt="Image 4"></a>
+                        <a href="resenha_vingadores.html"> <img class="img-card"
+                                src="imagens/vingadores/vingadores_ultimato.jpg" alt="Image 4"></a>
                     </div>
                 </div>
             </div>
@@ -203,23 +206,34 @@
 
     <!-- Jquery e JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-
+    <!-- Javascript Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-    <script>
-        new Glide('.glide').mount()
-    </script>
-
+    <!-- Navbar -->
     <script>
         $(document).ready(function () {
             $(".button-collapse").sideNav();
         });
     </script>
 
+    <script>
+        window.onscroll = function () { nav_cor() };
+
+        function nav_cor() {
+            if (document.documentElement.scrollTop > 100) {
+                document.getElementById("nav").className = "test";
+                document.getElementById("nav").style.transition = "all 0.2s";
+            } else {
+                document.getElementById("nav").className = "";
+            }
+        }
+    </script>
+
+    <!-- Carousel -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
@@ -246,20 +260,6 @@
             },
         });
     </script>
-
-    <script>
-        window.onscroll = function () { nav_cor() };
-
-        function nav_cor() {
-            if (document.documentElement.scrollTop > 100) {
-                document.getElementById("nav").className = "test";
-                document.getElementById("nav").style.transition = "all 0.2s";
-            } else {
-                document.getElementById("nav").className = "";
-            }
-        }
-    </script>
-
 </body>
 
 </html>
